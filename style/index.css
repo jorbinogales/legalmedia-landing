@@ -1,0 +1,158 @@
+:root {
+    --bg-blue-strong: #004369;
+    --bg-blue-light: #054469;
+    --bg-yellow: #acac9b;
+    --bg-gray:#b8b9b5;
+    --bg-light:#f7f6f5;
+}
+
+@font-face {
+    font-family: 'Pangram';
+    src: url('../fonts/Pangram-Bold.otf');
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Medium.ttf');
+}
+  
+
+header{
+    position:absolute;
+    display: block;
+    width:100%;
+    top:0;
+    height:50px;
+    z-index: 100;
+    padding: 15px 10px;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Pangram';
+}
+
+
+button{
+    display: block;
+    position:relative;
+    margin:auto;
+
+    width:100%;
+
+    padding: 10px 0px;
+
+    background-color: var(--bg-light);
+    border-radius: 8px;
+
+    color: var(--bg-blue-strong);
+
+    border:none;
+    font-weight: bold;
+
+}
+
+header img{
+    display: block;
+    width:100px;
+    height:100px;
+}
+
+button:hover{
+    background-color: var(--bg-yellow);
+    color:white;
+    transition: all .5s ease-in-out;
+}
+
+header button{
+    position:relative;
+    top:10px;
+    max-width: 200px;
+    margin:0;
+    margin-left: auto;
+}
+
+#top{
+    position:relative;
+    height:100%;
+    background-color: var(--bg-blue-light);
+    padding-top:150px;
+}
+
+#top img{
+    position:relative;
+    display: block;
+    width:100%;
+    max-width: 400px;
+    margin-left: auto;
+}
+
+#top .text{
+    position: relative;
+    color:white;
+    font-size:45px;
+    text-align: center;
+    line-height: 35px;
+    font-family: 'Pangram';
+    z-index: 50;
+}
+
+#top .text span{
+    color: var(--bg-yellow);
+}
+
+#top .text-small{
+    position: relative;
+    font-size:18px;
+    color:white;
+    max-width: 400px;
+    margin:auto;
+    text-align: center;
+    font-family: 'Raleway';
+    line-height: 35px;
+    z-index: 50;
+}
+
+#top button{
+    max-width: 280px;
+    margin:auto;
+}
+
+#body h2{
+    padding: 15px 10px;
+    text-align: center;
+    font-size:35px;
+    color: var(--bg-blue-strong);
+}
+
+#body{
+    padding: 50px 0px;
+}
+
+#body .row{
+    padding:0;
+    margin:0
+}
+
+#body .card-target{
+    box-shadow: 0px 0px 5px 0px var(--bg-gray);
+    min-height: 300px;
+    padding: 35px 20px;
+}
+
+#body .card-target:hover{
+    box-shadow: 0px 0px 15px 5px var(--bg-gray);
+    transition: all .5s ease-in-out;
+}
+
+#body .card-target h3{
+    line-height: 35px;
+    text-align: left;
+    color: var(--bg-yellow);
+    font-weight: bold;
+}
+
+#body .card-target p{
+    line-height: 35px;
+    color: var(--bg-blue-strong);
+    text-align: left;
+    font-weight: bold;
+}
